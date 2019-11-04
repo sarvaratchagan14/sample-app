@@ -1,0 +1,50 @@
+:host {
+
+  .toolbar {
+    height: 60px;
+    margin: -8px;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-weight: 600;
+
+    img {
+      margin: 0 16px;
+    }
+
+    .badge {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      display: inline-block;
+
+      &:before {
+        content: '';
+      }
+
+      &.offline {
+        background: #ff0000;
+      }
+
+      &.online {
+        background: #008000;
+      }
+
+    }
+
+    #twitter-logo {
+      height: 40px;
+      margin: 0 16px;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .spacer {
+      flex: 1;
+    }
+
+  }
+}
